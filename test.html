@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="number" id="no1" placeholder="Enter First Number">
+    <input type="number" id="no2" placeholder="Enter Second Number">
+    <button id="submit">Click</button>
+</body>
+<script>
+    let submit= document.getElementById("submit");
+    submit.addEventListener("click",add)
+    function add() {
+        let a=document.getElementById("no1").value;
+        let b=document.getElementById("no2").value;
+        let c= parseFloat(a);
+        let d= parseFloat(b);
+        alert(c+d);
+    }
+</script>
+</html>
